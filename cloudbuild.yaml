@@ -18,6 +18,7 @@ steps:
         $_TEMPLATE_PREFIX-$(date +%d-%m)-${SHORT_SHA} --project=$PROJECT_ID
         --machine-type=f1-micro
         --network=projects/$PROJECT_ID/global/networks/default
+        --subnet=projects/$PROJECT_ID/regions/us-central1/subnetworks/uc-central1-private 
         --no-address
         --image=cos-stable-81-12871-181-0 --image-project=cos-cloud 
         --preemptible 
