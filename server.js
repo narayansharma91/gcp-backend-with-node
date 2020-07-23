@@ -6,7 +6,7 @@ router.get('/', (req, res) => {
     res.send('this is index page')
 })
 router.get('/users', (req, res) => {
-    res.send([{ 'name': 'Narayan Sharma updated' }])
+    res.send([{ 'name': 'Narayan Sharma' }])
 })
 app.use('/api', router);
 app.listen(80);
